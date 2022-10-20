@@ -1,0 +1,59 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+    --text: #353535;
+    --subtxt: #565656;
+    --bg: rgb(248, 240, 229);
+    --subbg: rgb(234, 213, 185);
+    --mainfont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --linknew: #3949ab;
+    --linkold: #d32f2f;
+}
+
+body {
+    text-align: center;
+    font-family: var(--mainfont);
+    color:var(--text);
+    background-color:var(--bg);
+}
+
+
+
+h1 {padding-top: 0px; margin-bottom: 4px;}
+
+
+.dmain {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+} 
+
+.dsubL {
+    text-align: left;
+}
+
+.bigtext {
+    font-size: 170%;
+    font-weight: medium;
+    white-space: nowrap; 
+}
+
+.subtxt {color:var(--subtxt);}
+
+
+a:link {color: var(--linknew);}
+a:visited {color: var(--linkold);}
+
+
+@media (max-width: 800px){
+    .bigtext {
+        font-size: 120%;
+        font-weight: medium;
+        white-space: nowrap; 
+    }
+    .subtxt {color:var(--subtxt); font-size: 80%;}
+    h1 {font-size: 140%; margin-bottom: 0px;}
+
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="gen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ehe</title>
+</head>
+<body>
+
+    <h1>vocaloid enstars generator</h1>
+    <div id="subhd" class="subtxt">
+        <span id="songcount"></span> songs to choose from
+    </div>
+    <br>
+    <div class = "dmain">
+        <div class ="dsubL" id ="sng">
+            <span id="sng-title" class="bigtext"></span><br>
+            <span id="sng-subtitle" class="subtxt">
+                <span id="sng-pd"></span> ft.
+                <span id="sng-vc"></span>
+            </span>
+            <br>
+            <span id="sng-vid">
+                <iframe id="sng-player" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+            <br>
+
+        </div>
+
+        <div id="chr">
+            <img id="chr-img" src="">
+        <br>
+        <button id="sng-btn">new song</button>
+        <button id="chr-btn">new char</button><br>
+        <button id="new-btn">another one</button>
+        </div>
+    </div>
+    <br>
+    <div class="subtxt">
+        A full list of all the songs can be found <a href="songlist.html">here</a>!
+        <br>All songs in the generator have a translation available on the 
+        <a href="https://vocaloidlyrics.fandom.com/wiki/Vocaloid_Lyrics_Wiki">Vocaloid Lyrics Wiki</a>.
+        <br>Some of the songs might cover sensitive and/or suggestive topics. 
+        <br>
+    </div>
+    <br>
+    <div class ="dmain">
+        <div id ="filter">
+            <div class ="dsubL" id="filtereLb"><i id="filteropen" class="bi bi-caret-right-fill"></i> Producer Filters</div>
+            <div id = "filtercont">
+                <input type="checkbox" id="allCB" name="checkAll"><label for="okPDs">Select All</label><br>
+                <div id ="pdcheckboxes" class = "dmain">
+
+                </div>
+                <button id="update_btn">Update</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="subtxt">
+        I'm still debugging filtering so if stuff breaks <a href="" id="reset">click here</a> to reset the filters.
+    </div>
+
+
+    <script src="songdat.js"></script> 
+    <script src="main.js"></script> 
+    <script src="maingen.js"></script> 
+    <script>
+        document.getElementById("reset").addEventListener("click", clearOK())
+    </script>
+</body>

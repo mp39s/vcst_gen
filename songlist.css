@@ -1,0 +1,35 @@
+
+.dmain a {font-size: 110%; font-weight:bold; text-decoration: none;}
+
+.pdname {
+    font-size: 130%; font-weight:bold;
+    background-color: var(--subbg);
+    padding: 10px 10px 5px 10px;
+}
+
+#main {
+    justify-content: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.songcont {
+    text-align: left;
+    align-self: flex-start;
+    border: solid 1px black;
+    margin:5px;
+    width: 32%;
+    justify-self: flex-start;
+}
+
+.songcont ul {
+    margin: 8px 10px 15px 0px;
+}
+
+
+@media (max-width: 800px){
+    .songcont {
+        width: 90vw;
+    }
+}
+
